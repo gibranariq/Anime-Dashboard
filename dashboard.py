@@ -77,9 +77,9 @@ for idx, (index, anime) in enumerate(top_10_anime.iterrows()):
     with cols[idx]:
         poster_path = f"Poster/{anime['Name']}.jpg"
         if os.path.exists(poster_path):
-            st.image(poster_path, caption=anime['Name'], use_column_width=True)
+            st.image(poster_path, caption=anime['Name'])
         else:
-            st.image('Poster/default.jpg', caption=anime['Name'], use_column_width=True)
+            st.image('Poster/default.jpg', caption=anime['Name'])
         
         # CSS agar teks sejajar rata tengah
         st.markdown(
