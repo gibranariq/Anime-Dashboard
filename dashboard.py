@@ -9,7 +9,7 @@ st.set_page_config(page_title="Anime Dashboard", layout="wide")
 # Load dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv('data/anime_cleaned.csv')
+    return pd.read_csv('data/clean_anime.csv')
 
 anime_data = load_data()
 
